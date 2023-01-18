@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!-- Your HTML Here -->
+  <body>
+    <div id="card-front" onclick="flipFrontCard()">
+      Alexander Steele
+      <img src="images/profile photo.jpg" alt="Profile Photo" id="photo" />
+      1st Year Computer Science Major
+    </div>
+    <div id="card-back" onclick="flipBackCard()">
+      <p>
+        I'm from Ashburn, Virginia, and I love to play chess and go disc
+        golfing. My passion for social good first began while I was interning at
+        Accessible Community during high school. During my internship, I was
+        shocked to learn about how so much of the internet is inaccessible to
+        people with various disabilities. After working to increase
+        accessibility, I found this experience very fulfilling and I'm eager to
+        use my skills to help others.
+      </p>
+    </div>
+    <p id="message">Click the card the learn more about me!</p>
+  </body>
+</html>
+
+<script>
+  function flipFrontCard() {
+    document.getElementById("card-front").style.display = "none";
+    document.getElementById("card-back").style.display = "flex";
+  }
+  function flipBackCard() {
+    document.getElementById("card-back").style.display = "none";
+    document.getElementById("card-front").style.display = "flex";
+  }
+</script>
